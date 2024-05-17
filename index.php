@@ -33,11 +33,11 @@ function detectIntentText($projectId, $text, $sessionId, $languageCode = 'en-US'
 
     $sessionsClient->close();
 
-    return [
-        'queryText' => $queryResult->getQueryText(),
-        'fulfillmentText' => $queryResult->getFulfillmentText(),
-        'intent' => $queryResult->getIntent()->getDisplayName()
-    ];
+    // return [
+    //     'queryText' => $queryResult->getQueryText(),
+    //     'fulfillmentText' => $queryResult->getFulfillmentText(),
+    //     'intent' => $queryResult->getIntent()->getDisplayName()
+    // ];
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
